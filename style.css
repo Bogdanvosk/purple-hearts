@@ -14,11 +14,14 @@ body {
 }
 
 .heart {
+    cursor: pointer;
+    opacity: 1;
     font-size: 2rem;
     position: fixed;
     top: -1vh;
     transform: translateY(0);
     animation: fall 3s linear forwards;
+    transition: opacity .5s;
 }
 
 @keyframes fall {

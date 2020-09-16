@@ -14,7 +14,7 @@ function createHeart() {
     }, 5000);
 
     heart.addEventListener('click', () => {
-        heart.remove();
+        heart.style.opacity = 0;
     })
 }
 
