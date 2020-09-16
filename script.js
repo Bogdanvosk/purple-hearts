@@ -1,5 +1,6 @@
 function createHeart() {
     const heart = document.createElement('div');
+
     heart.classList.add('heart');
     heart.innerHTML = '💜';
 
@@ -11,6 +12,10 @@ function createHeart() {
     setTimeout(() => {
         heart.remove();
     }, 5000);
+
+    heart.addEventListener('click', () => {
+        heart.remove();
+    })
 }
 
 setInterval(createHeart, 500);
